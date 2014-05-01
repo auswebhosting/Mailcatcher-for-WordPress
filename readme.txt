@@ -31,24 +31,6 @@ Mailcatcher can be enabled by adding the following line to your `wp-config.php` 
 
     define(WP_MAILCATCHER, true);
 
-= How do I configure Mailcatcher for WordPress =
-
-Typically, the pre-configured values should work for you on a standard setup. However, you can easily change the configuration values in the `mailcatcher.php` file:
-
-    $mailcatcher = new Mailcatcher(array(
-        "from"        => "dev@local.dev",
-        "fromname"    => "dev",
-        // "host"     => "127.0.0.1",
-        // "port"     => "1025",
-        // "smtpauth" => false
-    ));
-
-= How do I send a test email? =
-
-If you would like to send a test email, simply uncomment the following line in `mailcatcher.php` file:
-
-    // $mailcatcher->sendMail();
-
 == Changelog ==
 
 = 1.0 =
